@@ -11,7 +11,6 @@ import javax.inject.Inject
 abstract class BaseFragment<viewModel : BaseViewModel,binding : ViewBinding>(private val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> binding) : Fragment() {
     @Inject
     lateinit var viewModel: viewModel
-
      private var _binding: binding? = null
      protected val binding: binding get() = _binding ?: error("Must only access binding while fragment is attached.")
 

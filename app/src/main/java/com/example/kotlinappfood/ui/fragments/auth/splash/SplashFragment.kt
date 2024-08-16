@@ -1,4 +1,4 @@
-package com.example.kotlinappfood.ui.fragments.splash
+package com.example.kotlinappfood.ui.fragments.auth.splash
 
 import android.os.Handler
 import android.os.Looper

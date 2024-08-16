@@ -1,4 +1,4 @@
-package com.example.kotlinappfood.ui.fragments.onBoarding
+package com.example.kotlinappfood.ui.fragments.auth.onBoarding
 
 import android.app.Application
 import android.content.Context

@@ -1,21 +1,19 @@
 package com.example.kotlinappfood.utilities
 
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
-import com.example.kotlinappfood.databinding.LangugeDialogBinding
-import com.example.kotlinappfood.ui.activity.MainActivity
-import java.security.AccessController.getContext
+import com.example.kotlinappfood.databinding.LanguageDialogBinding
 
 
 class CommonMethods {
     companion object{
-        fun showLanguageDialog(context: Context,layoutInflater: LayoutInflater){
-            val  alertDialog = Dialog(context)
-            val  dialogBinding = LangugeDialogBinding.inflate(layoutInflater)
+        private lateinit var alertDialog :Dialog
+        fun showLanguageDialog(context: Context,layoutInflater: LayoutInflater,activity: Activity){
+            alertDialog = Dialog(context)
+            val  dialogBinding = LanguageDialogBinding.inflate(layoutInflater)
             alertDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
             alertDialog.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
             alertDialog.setContentView(dialogBinding.root)
@@ -32,7 +30,7 @@ class CommonMethods {
                   SharedPreferencesHelper.setSharedPreferenceString(context,SharedPreferencesHelper.Keys.LANGUAGE_KEY.name,SharedPreferencesHelper.Keys.EN.name)
                   alertDialog.dismiss()
               }
-
+                activity.recreate()
             }
 
             alertDialog.show()

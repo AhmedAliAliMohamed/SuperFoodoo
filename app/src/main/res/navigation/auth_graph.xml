@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.kotlinappfood.ui.fragments.splash.SplashFragment"
+        android:name="com.example.kotlinappfood.ui.fragments.auth.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash">
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="com.example.kotlinappfood.ui.fragments.onBoarding.OnBoardingFragment"
+        android:name="com.example.kotlinappfood.ui.fragments.auth.onBoarding.OnBoardingFragment"
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding" />
 </navigation>
