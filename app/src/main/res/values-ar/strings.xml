@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="skip">تخطي</string>
+    <string name="get_start">ابدأ</string>
+    <string name="trending_foods">الأطعمة الرائجة</string>
+    <string name="fast_delivery">تسليم سريع</string>
+    <string name="find_nearby_restaurants">البحث عن المطاعم القريبة</string>
+    <string name="easy_ordering">طلب سهل</string>
+    <string name="welcome_to_super_foodoo">مرحبا بك في سوبر فودو</string>
+    <string name="the_application_allows_you_to_learn_about_all_the_trendy_meals_first_and_latest_dishes">يتيح لك التطبيق التعرف على جميع الوجبات العصرية أول بأول، وآخر الأطباق.</string>
+    <string name="your_order_will_be_delivered_as_quickly_as_possible_so_you_can_get_your_meal_hot_and_fresh">سيتم تسليم طلبك في أسرع وقت ممكن حتى تتمكن من الحصول على وجبتك ساخنة وطازجة.</string>
+    <string name="we_allow_you_to_see_all_the_restaurants_closest_to_you">نتيح لك برؤية جميع المطاعم الأقرب إليك</string>
+    <string name="easily_order_your_meal_from_your_favorite_meals">اطلب وجبتك بسهولة من وجباتك المفضلة.</string>
+    <string name="the_application_closest_to_you_for_ordering_meals_and_booking_restaurants_closest_to_you">التطبيق الأقرب إليك لطلب الوجبات وحجز المطاعم الأقرب إليك.</string>
+    <string name="alert">تنبيه !</string>
+    <string name="change_language">تغير اللغه</string>
+    <string name="okay">حسناً</string>
+    <string name="cancel">إلغاء</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="create_account">إنشاء حساب</string>
+</resources>

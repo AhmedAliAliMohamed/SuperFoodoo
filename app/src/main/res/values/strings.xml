@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">Super Foodoo</string>
+    <string name="skip">skip</string>
+    <string name="get_start">Get started</string>
+    <string name="trending_foods">Trending Foods</string>
+    <string name="fast_delivery">Fast Delivery</string>
+    <string name="find_nearby_restaurants">Find Nearby Restaurants</string>
+    <string name="easy_ordering">Easy Ordering</string>
+    <string name="welcome_to_super_foodoo">Welcome to Super Foodoo</string>
+    <string name="the_application_allows_you_to_learn_about_all_the_trendy_meals_first_and_latest_dishes">The application allows you to learn about all the trendy meals first, and latest dishes.</string>
+    <string name="your_order_will_be_delivered_as_quickly_as_possible_so_you_can_get_your_meal_hot_and_fresh">Your order will be delivered as quickly as possible so you can get your meal hot and fresh.</string>
+    <string name="we_allow_you_to_see_all_the_restaurants_closest_to_you">We allow you to see all the restaurants closest to you.</string>
+    <string name="easily_order_your_meal_from_your_favorite_meals">Easily order your meal from your favorite meals.</string>
+    <string name="the_application_closest_to_you_for_ordering_meals_and_booking_restaurants_closest_to_you">The application closest to you for ordering meals and booking restaurants closest to you.</string>
+    <string name="alert">Alert !</string>
+    <string name="change_language">Change Language</string>
+    <string name="okay">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create account</string>
+</resources>
