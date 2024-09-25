@@ -1,6 +1,7 @@
 package com.example.kotlinappfood.ui.fragments.auth.onBoarding
 
 import android.view.View
+import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
 import com.example.kotlinappfood.adapters.OnBoardingAdapter
 import com.example.kotlinappfood.databinding.FragmentOnBoardingBinding
@@ -48,12 +49,15 @@ class OnBoardingFragment :
             CommonMethods.showLanguageDialog(requireContext(), layoutInflater, requireActivity())
         }
         binding.skipTextView.setOnClickListener {}
-        binding.createAccountButton.setOnClickListener{}
-        binding.loginButton.setOnClickListener{}
+        binding.createAccountButton.setOnClickListener{
+            Navigation.findNavController(binding.root).navigate(OnBoardingFragmentDirections.actionOnBoardingFragmentToSignUpFragment())
+        }
+        binding.loginButton.setOnClickListener{
+            Navigation.findNavController(binding.root).navigate(OnBoardingFragmentDirections.actionOnBoardingFragmentToSignInFragment())
+        }
     }
 
     override fun initViewModel() {
-
     }
 
     override fun initObservers() {

@@ -53,14 +53,17 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation (libs.material.v190)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.coordinatorlayout)
+    implementation(libs.androidx.databinding.runtime)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 
     // ViewModel
     implementation (libs.androidx.lifecycle.viewmodel.ktx.v251)
@@ -91,10 +94,12 @@ dependencies {
     implementation (libs.glide)
     annotationProcessor (libs.compiler)
 
-
+    //Navigation
     implementation(libs.androidx.navigation.dynamic.features.fragment)
     implementation(libs.androidx.navigation.compose)
 
+    //CCP
+    implementation(libs.ccp)
 
 
 

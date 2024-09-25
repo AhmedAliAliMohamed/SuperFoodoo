@@ -20,5 +20,27 @@
         android:id="@+id/onBoardingFragment"
         android:name="com.example.kotlinappfood.ui.fragments.auth.onBoarding.OnBoardingFragment"
         android:label="fragment_on_boarding"
-        tools:layout="@layout/fragment_on_boarding" />
+        tools:layout="@layout/fragment_on_boarding">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_onBoardingFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.kotlinappfood.ui.fragments.auth.signIn.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in"
+        />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.kotlinappfood.ui.fragments.auth.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>
