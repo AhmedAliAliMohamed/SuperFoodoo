@@ -55,6 +55,10 @@ class OnBoardingFragment :
         binding.loginButton.setOnClickListener{
             Navigation.findNavController(binding.root).navigate(OnBoardingFragmentDirections.actionOnBoardingFragmentToSignInFragment())
         }
+
+        binding.skipTextView.setOnClickListener{
+            binding.onboardingViewPager.currentItem =  viewModel.getListForOnBoarding(requireContext()).size - 1
+        }
     }
 
     override fun initViewModel() {

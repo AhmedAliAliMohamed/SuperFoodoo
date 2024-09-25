@@ -1,19 +1,15 @@
 package com.example.kotlinappfood.ui.fragments.auth.signIn
 
 
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
-import androidx.core.content.ContextCompat
+import androidx.navigation.Navigation
 import com.example.kotlinappfood.R
 import com.example.kotlinappfood.databinding.FragmentSignInBinding
 import com.example.kotlinappfood.ui.base.BaseFragment
 
-
 class SignInFragment :
     BaseFragment<SignInViewModel, FragmentSignInBinding>(FragmentSignInBinding::inflate) {
     override fun initListeners() {
-//        TODO("Not yet implemented")
         binding.mobileEditText.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 binding.textMobileHint.visibility = View.VISIBLE
@@ -30,6 +26,9 @@ class SignInFragment :
                     binding.mobileEditText.hint = getString(R.string.mobile)
                 }
             }
+        }
+        binding.createAccountTextView.setOnClickListener{
+            Navigation.findNavController(binding.root).navigate(SignInFragmentDirections.actionSingInFragmentToSignUpFragment())
         }
 
     }
