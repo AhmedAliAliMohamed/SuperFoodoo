@@ -27,4 +27,11 @@
     <string name="sign_up">Sign up</string>
     <string name="confirm_password">Confirm password</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="otp_sent_to">Otp sent to</string>
+    <string name="verification_code">Verification code</string>
+    <string name="resend_otp_in">Resend OTP in</string>
+    <string name="sec">sec</string>
+    <string name="verify">Verify</string>
 </resources>

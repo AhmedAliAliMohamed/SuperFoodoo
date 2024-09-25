@@ -27,4 +27,9 @@
     <string name="sign_up">إنشاء حساب</string>
     <string name="confirm_password">تأكيد كلمة السر</string>
     <string name="already_have_an_account">لديك حساب بالفعل؟</string>
+    <string name="otp_sent_to">تم إرسال رمز التأكد الي </string>
+    <string name="verification_code">رمز التحقق</string>
+    <string name="resend_otp_in">إعاد إرسال رمز التحقق في</string>
+    <string name="sec">ثانية</string>
+    <string name="verify">تأكيد</string>
 </resources>

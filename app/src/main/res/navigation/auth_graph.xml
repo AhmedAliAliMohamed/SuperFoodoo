@@ -76,5 +76,29 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_signUpFragment_to_verificationAccountFragment"
+            app:destination="@id/verificationAccountFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="mobile"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/verificationAccountFragment"
+        android:name="com.example.kotlinappfood.ui.fragments.auth.verificationAccount.VerificationAccountFragment"
+        android:label="fragment_verification_account"
+        tools:layout="@layout/fragment_verification_account" >
+        <argument
+            android:name="mobile"
+            app:argType="string"
+            app:nullable="false"/>
     </fragment>
 </navigation>

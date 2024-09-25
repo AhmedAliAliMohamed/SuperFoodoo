@@ -101,6 +101,9 @@ dependencies {
     //CCP
     implementation(libs.ccp)
 
+    //OTP
+    implementation (libs.otp.view)
+
 
 
 
