@@ -3,10 +3,12 @@ package com.example.kotlinappfood.ui.fragments.auth.verificationAccount
 
 import android.annotation.SuppressLint
 import android.os.CountDownTimer
-import android.widget.Toast
 import com.example.kotlinappfood.databinding.FragmentVerificationAccountBinding
 import com.example.kotlinappfood.ui.base.BaseFragment
+import com.example.kotlinappfood.utilities.DataState
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class VerificationAccountFragment :
     BaseFragment<VerificationAccountViewModel, FragmentVerificationAccountBinding>(
         FragmentVerificationAccountBinding::inflate
@@ -19,9 +21,12 @@ class VerificationAccountFragment :
         startResendTimer()
         binding.resendOtpButton.isEnabled = false
         binding.resendOtpButton.setOnClickListener {
-            Toast.makeText(requireContext(), "Resend", Toast.LENGTH_SHORT).show()
+           hideProgressDialog()
         }
         binding.imageButtonBack.setOnClickListener { requireActivity().onBackPressedDispatcher.onBackPressed() }
+        binding.createAccountButton.setOnClickListener {
+        }
+
 
     }
 
@@ -34,7 +39,19 @@ class VerificationAccountFragment :
     }
 
     override fun initErrorObservers() {
-//        TODO("Not yet implemented")
+        viewModel.dataState.observe(this) {state ->
+           when (state) {
+               is DataState.Loading -> {
+
+               }
+               is DataState.Success -> {
+
+               }
+               is DataState.Error -> {
+
+               }
+           }
+        }
     }
 
     private fun startResendTimer() {

@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "755857181681",
+    "project_id": "superfoodoo-69af3",
+    "storage_bucket": "superfoodoo-69af3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755857181681:android:b8ae7bf42f413e36749250",
+        "android_client_info": {
+          "package_name": "com.example.kotlinappfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755857181681-4e6n1cqnsh07df7vhcdm7ndksf05t91f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kotlinappfood",
+            "certificate_hash": "f39b881481abc37d1afbe8bafde16493fb326288"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5j16vcQkYjraUEUJHobQD348Gb6enZPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
