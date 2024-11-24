@@ -104,6 +104,9 @@ dependencies {
     //OTP
     implementation (libs.otp.view)
 
+    //Lottie
+    implementation (libs.lottie)
+
 
 
 
