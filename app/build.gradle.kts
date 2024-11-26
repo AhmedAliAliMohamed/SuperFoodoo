@@ -107,6 +107,9 @@ dependencies {
     //Lottie
     implementation (libs.lottie)
 
+    implementation (project(":data"))
+    implementation (project(":domain"))
+
 
 
 
