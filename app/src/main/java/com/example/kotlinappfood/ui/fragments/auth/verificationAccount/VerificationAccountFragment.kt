@@ -40,17 +40,19 @@ class VerificationAccountFragment :
 
     override fun initErrorObservers() {
         viewModel.dataState.observe(this) {state ->
-           when (state) {
-               is DataState.Loading -> {
+            when (state) {
+                is DataState.Loading -> {
+                    showProgressDialog()
+                }
+                is DataState.Success -> {
+                    hideProgressDialog()
 
-               }
-               is DataState.Success -> {
+                }
+                is DataState.Error -> {
+                    hideProgressDialog()
 
-               }
-               is DataState.Error -> {
-
-               }
-           }
+                }
+            }
         }
     }
 

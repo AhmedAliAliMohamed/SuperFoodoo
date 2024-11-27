@@ -23,4 +23,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "kotlinAppFood"
 include(":app")
- 
+include(":data")
+include(":domain")

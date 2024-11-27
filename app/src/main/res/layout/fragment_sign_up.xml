@@ -104,6 +104,7 @@
                 android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/confirm_password_edite_text_field"
             style="@style/CustomTextInputLayout"
@@ -123,7 +124,6 @@
                 android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/create_account_button"

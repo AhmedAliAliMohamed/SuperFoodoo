@@ -3,6 +3,8 @@ package com.example.kotlinappfood.appModule
 import android.app.Application
 import android.content.Context
 import com.example.kotlinappfood.network.ApiInterface
+import com.example.repository.OnboardingRepository
+import com.example.repository.OnboardingRepositoryImp
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -71,6 +73,11 @@ abstract class AppModule {
             @Provides
             @Singleton
             fun provideApiInterface(retrofit: Retrofit): ApiInterface = retrofit.create(ApiInterface::class.java)
+
+            @Provides
+            @Singleton
+            fun provideDomainRepository(domainOnboardingRepositoryImpl: OnboardingRepositoryImp): OnboardingRepository = domainOnboardingRepositoryImpl
+
         }
     }
 
