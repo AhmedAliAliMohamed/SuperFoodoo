@@ -1,4 +1,4 @@
-package com.example.model
+package com.example.features.onBoarding.model
 
 data class OnboardingModel(
     val image: Int,

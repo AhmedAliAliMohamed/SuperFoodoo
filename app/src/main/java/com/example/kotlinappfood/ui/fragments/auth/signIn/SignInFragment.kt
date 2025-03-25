@@ -13,7 +13,7 @@ class SignInFragment :
     BaseFragment<SignInViewModel, FragmentSignInBinding>(FragmentSignInBinding::inflate) {
     @SuppressLint("CheckResult")
     override fun initListeners() {
-        binding.loginButton.isEnabled  = false
+        binding.loginButton.isEnabled = false
         binding.countryCodePicker.registerCarrierNumberEditText(binding.mobileEditText)
         binding.mobileEditText.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {

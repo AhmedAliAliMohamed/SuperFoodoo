@@ -1,6 +1,6 @@
 package com.example.error
 
-class DomainError : Exception() {
+class Error : Exception() {
     override val message: String
         get() = "Domain Error"
 }

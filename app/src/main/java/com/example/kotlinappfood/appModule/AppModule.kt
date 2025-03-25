@@ -4,7 +4,13 @@ import android.app.Application
 import android.content.Context
 import com.example.kotlinappfood.network.ApiInterface
 import com.example.repository.OnboardingRepository
-import com.example.repository.OnboardingRepositoryImp
+import com.example.features.onBoarding.repo.OnboardingRepositoryImp
+import com.example.repository.SignInRepository
+import com.example.features.auth.repo.AuthRepositoryImp
+import com.example.features.auth.source.AuthRemote
+import com.example.features.auth.source.AuthRemoteImpl
+import com.example.features.onBoarding.source.OnBoardingRemote
+import com.example.features.onBoarding.source.OnBoardingRemoteImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -28,7 +34,6 @@ abstract class AppModule {
         private annotation class FoodApplicationBaseUrl
 
         companion object {
-
             @Provides
             @Singleton
             fun provideContext(application: Application): Context = application
@@ -76,7 +81,20 @@ abstract class AppModule {
 
             @Provides
             @Singleton
-            fun provideDomainRepository(domainOnboardingRepositoryImpl: OnboardingRepositoryImp): OnboardingRepository = domainOnboardingRepositoryImpl
+            fun provideDomainOnboardingRepository(domainOnboardingRepositoryImpl: OnboardingRepositoryImp): OnboardingRepository = domainOnboardingRepositoryImpl
+
+            @Provides
+            @Singleton
+            fun provideDomainSignInRepository(domainAuthRepositoryImpl: AuthRepositoryImp): SignInRepository = domainAuthRepositoryImpl
+
+            @Provides
+            @Singleton
+            fun provideAuthRemoteDataSource(authRemoteImpl: AuthRemoteImpl): AuthRemote = authRemoteImpl
+
+            @Singleton
+            @Provides
+            fun  provideOnBoardingRemoteDataSource(onBoardingRemoteImpl: OnBoardingRemoteImpl): OnBoardingRemote = onBoardingRemoteImpl
+
 
         }
     }
